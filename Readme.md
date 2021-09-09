@@ -14,4 +14,4 @@ _Clona el repositorio del proyecto_
 * Docker version 20.10.8
 * docker-compose version 1.29.2
 * node v12.22.3
-* npm ^6.14.13
+* npm 6.14.13
