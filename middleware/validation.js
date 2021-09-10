@@ -1,5 +1,5 @@
 const Ajv = require('ajv')
-const schema = require('../data/schema')
+const schema = require('../data/schemaResuelve')
 
 const isEmpty = (obj) => {
   let errors = false

@@ -17,6 +17,18 @@ const schema = {
           equipo: { type: 'string', minLength: 1 }
         }
       }
+    },
+    niveles: {
+      type: 'array',
+      minItems: 1,
+      items: {
+        type: 'object',
+        required: ['nivel', 'goles'],
+        properties: {
+          nivel: { type: 'string', minLength: 1 },
+          goles: { type: 'number', minimum: 0 }
+        }
+      }
     }
   }
 }

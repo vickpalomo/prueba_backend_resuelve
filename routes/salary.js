@@ -38,12 +38,23 @@ const router = express.Router()
  *                        nullable: true
  *                      equipo:
  *                        type: string
+ *                niveles:
+ *                  type: array
+ *                  items:
+ *                    type: object
+ *                    properties:
+ *                      nivel:
+ *                        type: string
+ *                      goles:
+ *                        type: integer
  *              type: object
  *      security:
  *        - bearerAuth: []
  *      responses:
  *        '200':
- *          description: company created
+ *          description: sueldo calculado
+ *        '400':
+ *          description: se encontraron errores en la estructura
  */
 router.post('/', validationsMiddleware, calculateSalary)
 

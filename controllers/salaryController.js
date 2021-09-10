@@ -1,7 +1,13 @@
 const { teamDataToReplaceLevels, getPercentageTeam, getTotalSalary } = require('../lib/salary')
-const levels = require('../data/levels')
+let levels = require('../data/levels')
 
 const calculateSalary = (req, res) => {
+  if (req.body.niveles) {
+    levels = req.body.niveles.reduce((custom, nivel) => {
+      custom[nivel.nivel] = nivel.goles
+      return custom
+    }, {})
+  }
   const teamDataToGetSalary = teamDataToReplaceLevels(req.body.jugadores, levels)
   const percentageTeam = getPercentageTeam(teamDataToGetSalary)
   const teamDataFullSalary = getTotalSalary(teamDataToGetSalary, percentageTeam)
