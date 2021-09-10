@@ -7,7 +7,7 @@
     "dev": "nodemon",
     "eslint": "eslint *.js controllers/*.js m*/*.js routes/*.*js",
     "prepare": "husky install",
-    "test": "NODE_ENV=test jest --coverage --verbose --forceExit",
+    "test": "NODE_ENV=test jest --coverage --verbose",
     "start:prod": "node index.js"
   },
   "repository": {
