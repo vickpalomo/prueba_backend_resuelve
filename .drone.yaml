@@ -16,7 +16,7 @@ steps:
     sonar_token:
       from_secret: sonar_token
 
-- name: publishg
+- name: publish
   image: plugins/docker
   settings:
     username:
