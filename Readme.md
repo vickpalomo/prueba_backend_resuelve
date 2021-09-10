@@ -46,6 +46,12 @@ _Para ejecutar el proyecto con nodejs_
   http://localhost:3000
 ```
 
+## Generando documentacion ⚙️
+
+* Para generar la docuemntacion del codigo ejecute
+```
+  npm run jsdoc
+```
 ## Ejecutando las pruebas ⚙️
 
 * Para realizar las pruebas automatizadas, ejecute
