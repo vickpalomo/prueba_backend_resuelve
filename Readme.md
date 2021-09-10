@@ -68,7 +68,7 @@ _El proyecto tiene un endpoint que recibe el json con los datos para calcular el
 
 * La documentación del codigo del proyecto la encuentra en:
 ```
-  GET http://54.184.109.104/resuelve/documentation/
+  GET http://3.134.243.162/documentation/
 ```
 
 * La documentación de la API la encuentra en:
@@ -78,10 +78,9 @@ _El proyecto tiene un endpoint que recibe el json con los datos para calcular el
 
 ## Construccion CD/CI 🛠️
 
-_El proyecto construye una imagen docker, siguiendo un pipeline hecho con drone.io, se conecta aun servidor de sonarqube para hacer analisis de codigo y por ultimo sube la imagen al docker hub para que sea visible para cualquier persona._
+_El proyecto construye una imagen docker, siguiendo un pipeline hecho con drone.io y por ultimo sube la imagen al docker hub para que sea visible para cualquier persona._
 
 * [Drone](https://docs.drone.io/) - Servidor CI/CD.
-* [Sonarqube](https://docs.sonarqube.org/latest/) - Servidor para analisis de Codigo y Seguridad.
 * [Docker Hub](https://hub.docker.com/) - Usado como repositorio de Imagenes
 
 ## Autores ✒️

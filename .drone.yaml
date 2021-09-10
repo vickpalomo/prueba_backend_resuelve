@@ -7,14 +7,7 @@ steps:
   image: node:12.22-alpine3.14
   commands: 
   - npm install
-
-- name: code-analysis
-  image: aosapps/drone-sonar-plugin
-  settings:
-    sonar_host:
-      from_secret: sonar_host
-    sonar_token:
-      from_secret: sonar_token
+  - npm test
 
 - name: publish
   image: plugins/docker

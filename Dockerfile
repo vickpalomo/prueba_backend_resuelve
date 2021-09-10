@@ -12,6 +12,8 @@ RUN npm install
 
 COPY . .
 
+RUN npm run jsdoc
+
 EXPOSE 3000
 
 CMD ["npm", "run", "start:prod"]

@@ -1,6 +1,19 @@
 const { teamDataToReplaceLevels, getPercentageTeam, getTotalSalary } = require('../lib/salary')
 let levels = require('../data/levels')
 
+/**
+* @fileoverview Salary Controller
+*
+* @author Victor Palomo <ing.victorpalomo@gmail.com>
+*/
+
+/**
+ * @function calculateSalary
+ * @description Calculate the total salary of each player
+ * @param  {Object} req Request Object
+ * @param  {Object} res Response Object
+ * @returns {Array} Array of players with the total salary calculated
+ */
 const calculateSalary = (req, res) => {
   if (req.body.niveles) {
     levels = req.body.niveles.reduce((custom, nivel) => {

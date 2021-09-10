@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
+    "jsdoc": "./node_modules/.bin/jsdoc -c conf.json",
     "eslint": "eslint *.js controllers/*.js m*/*.js routes/*.*js",
     "prepare": "husky install",
     "test": "NODE_ENV=test jest --coverage --verbose",
@@ -44,6 +45,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.2.0",
+    "jsdoc": "^3.6.7",
     "morgan": "^1.10.0",
     "swagger-jsdoc": "^4.0.0",
     "swagger-ui-express": "^4.1.4"

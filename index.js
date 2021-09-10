@@ -22,6 +22,7 @@ app.use(morgan(logType))
 app.use(express.static('public'))
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
+app.use('/documentation', express.static('out'))
 app.use('/api/v1', routes)
 
 app.listen(port, () => console.log(`API listening at http://localhost:${port}`))
