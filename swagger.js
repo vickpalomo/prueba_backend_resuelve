@@ -20,17 +20,7 @@ const swaggerOptions = {
       {
         url: `http://localhost:${process.env.APP_PORT}`
       }
-    ],
-    components: {
-      securitySchemes: {
-        bearerAuth: {
-          type: 'http',
-          name: 'Authorization',
-          in: 'header',
-          scheme: 'bearer'
-        }
-      }
-    }
+    ]
   },
   apis: ['./routes/*.js', './routes/modelo/*.js', './routes.js', './app.js']
 }

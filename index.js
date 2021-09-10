@@ -4,6 +4,7 @@ const port = process.env.APP_PORT || '3000'
 
 const compression = require('compression')
 const morgan = require('morgan')
+const routes = require('./routes.js')
 const cors = require('cors')
 const swaggerDocs = require('./swagger.js')
 const swaggerUi = require('swagger-ui-express')
@@ -21,5 +22,6 @@ app.use(morgan(logType))
 app.use(express.static('public'))
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
+app.use('/api/v1', routes)
 
 app.listen(port, () => console.log(`API listening at http://localhost:${port}`))
