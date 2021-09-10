@@ -1,3 +1,4 @@
+[![Build Status](https://cloud.drone.io/api/badges/vickpalomo/prueba_backend_resuelve/status.svg)](https://cloud.drone.io/vickpalomo/prueba_backend_resuelve)
 # Prueba Backend Ingenieria Resuelve
 
 _Api desarrollada con node y express para resolver la prueba de backend de ingenieria resuelve_
