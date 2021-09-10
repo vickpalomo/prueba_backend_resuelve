@@ -22,7 +22,7 @@ const validationsMiddleware = (req, res, next) => {
       return custom
     }, {})
   }
-  if (isEmpty(req.body) || validateSchemaPlayer(req.body) || validateSchemaLevels(req.body.jugadores, levels)) return res.status(400).send({ code: 400, data: {}, msg: 'Se encontraron errores en los datos recibidos' })
+  if (isEmpty(req.body) || validateSchemaPlayer(req.body) || validateSchemaLevels(req.body.jugadores, levels)) return res.status(400).json({ code: 400, data: {}, msg: 'Se encontraron errores en los datos recibidos' })
   next()
 }
 

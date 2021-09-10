@@ -63,12 +63,12 @@ _El proyecto tiene un endpoint que recibe el json con los datos para calcular el
 
 * El proyecto esta hosteado en un vps de aws, puede hacer peticiones a la siguiente url:
 ```
-  POST http://http://3.134.243.162/api/v1/salary
+  POST http://3.134.243.162/api/v1/salary
 ```
 
 * La documentación del codigo del proyecto la encuentra en:
 ```
-  GET http://3.134.243.162/documentation/
+  GET http://localhost:3000/documentation/
 ```
 
 * La documentación de la API la encuentra en:
@@ -82,6 +82,7 @@ _El proyecto construye una imagen docker, siguiendo un pipeline hecho con drone.
 
 * [Drone](https://docs.drone.io/) - Servidor CI/CD.
 * [Docker Hub](https://hub.docker.com/) - Usado como repositorio de Imagenes
+* [Contenedor](https://hub.docker.com/r/vickpalomo/resuelve) - Contenedor con el proyecto
 
 ## Autores ✒️
 

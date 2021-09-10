@@ -24,7 +24,7 @@ const calculateSalary = (req, res) => {
   const teamDataToGetSalary = teamDataToReplaceLevels(req.body.jugadores, levels)
   const percentageTeam = getPercentageTeam(teamDataToGetSalary)
   const teamDataFullSalary = getTotalSalary(teamDataToGetSalary, percentageTeam)
-  return res.status(200).send({ code: 200, data: teamDataFullSalary, msg: 'Ok' })
+  return res.status(200).json({ code: 200, data: teamDataFullSalary, msg: 'Ok' })
 }
 
 module.exports = {

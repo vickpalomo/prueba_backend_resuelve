@@ -36,7 +36,7 @@
     "nodemon": "^2.0.4",
     "sonarqube-scanner": "^2.8.1",
     "standard": "^14.3.3",
-    "supertest": "^6.1.4"
+    "supertest": "^6.1.6"
   },
   "dependencies": {
     "ajv": "^8.6.2",
