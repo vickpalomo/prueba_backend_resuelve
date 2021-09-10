@@ -79,10 +79,11 @@ _El proyecto tiene un endpoint que recibe el json con los datos para calcular el
 
 ## Construccion CD/CI 🛠️
 
-_El proyecto construye una imagen docker, siguiendo un pipeline hecho con drone.io y por ultimo sube la imagen al docker hub para que sea visible para cualquier persona._
+_El proyecto construye una imagen docker, siguiendo un pipeline hecho con drone.io, hace un analisis de codigo con sonarqube y por ultimo sube la imagen al docker hub para que sea visible para cualquier persona._
 
 * [Drone](https://docs.drone.io/) - Servidor CI/CD.
 * [Docker Hub](https://hub.docker.com/) - Usado como repositorio de Imagenes
+* [Sonarqube](https://docs.sonarqube.org/latest/) - Servidor para analisis de Codigo y Seguridad.
 * [Contenedor](https://hub.docker.com/r/vickpalomo/resuelve) - Contenedor con el proyecto
 
 ## Autores ✒️
