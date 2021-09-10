@@ -1,4 +1,5 @@
 [![Build Status](https://cloud.drone.io/api/badges/vickpalomo/prueba_backend_resuelve/status.svg)](https://cloud.drone.io/vickpalomo/prueba_backend_resuelve)
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/dashboard?id=vickpalomo%3Aprueba_backend_resuelve)
 # Prueba Backend Ingenieria Resuelve
 
 _Api desarrollada con node y express para resolver la prueba de backend de ingenieria resuelve_
@@ -85,6 +86,8 @@ _El proyecto construye una imagen docker, siguiendo un pipeline hecho con drone.
 * [Docker Hub](https://hub.docker.com/) - Usado como repositorio de Imagenes
 * [Sonarqube](https://docs.sonarqube.org/latest/) - Servidor para analisis de Codigo y Seguridad.
 * [Contenedor](https://hub.docker.com/r/vickpalomo/resuelve) - Contenedor con el proyecto
+* [Dashboard Sonar](https://sonarcloud.io/dashboard?id=vickpalomo%3Aprueba_backend_resuelve) - Dashboard Sonar
+* [Dashboard Drone](https://cloud.drone.io/vickpalomo/prueba_backend_resuelve) - Dashboard Drone
 
 ## Autores ✒️
 
